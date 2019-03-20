@@ -1,0 +1,114 @@
+:root {
+    --primary-color: rgba(9, 173, 223, 0.15);
+    --secondary-color: rgb(13, 163, 209);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
+
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0.8rem;
+    position: sticky;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    border: none;
+    color: white;
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+}
+
+.navbar ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+.navbar i {
+    padding: 0 0.5rem;
+}
+
+.text-primary {
+    color: var(--secondary-color);
+}
+
+.container {
+    background: var(--primary-color);
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.container:before {
+    content: "";
+    background: url("./showcase.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container .showcase {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.l-heading {
+    margin: 1.2rem;
+    /* color: var(--primary-color); */
+    font-size: 3rem;
+}
+
+.container p {
+    padding: 0.5rem;
+}
+
+.quotation,
+.l-heading {
+    text-shadow: 1px 1px lightcoral;
+}
+
+.quotation {
+    max-width: 1100px;
+}
+
+.quote {
+    font-size: 1.7rem;
+}
+
+.author {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.invisible {
+    display: none;
+}
